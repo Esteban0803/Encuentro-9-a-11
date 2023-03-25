@@ -6,18 +6,17 @@ import java.util.Scanner;
 public class Act3 {
    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n;
-        int rep = 0;
-        int rep1=0;
-        int rep2=0;
-        int rep3=0;
-        int rep4=0;
+        int n,rep,rep1,rep2,rep3,rep4;
+        rep = 0;
+        rep1=0;
+        rep2=0;
+        rep3=0;
+        rep4=0;
         System.out.println("Ingresa un numero que sera tamaño del vector");
         n = sc.nextInt();
         int[] vector = new int[n];
         for (int i = 0; i < n; i++) {
-            int x = (int) (Math.random() * (100000));
-            vector[i] = x;  
+            vector [i] = (int) (Math.random()*99999); 
         }
             for (int i = 0; i < n; i++) {
                 String n1 = String.valueOf(vector[i]);
@@ -27,13 +26,13 @@ public class Act3 {
                 else if (n1.length()==2) {
                     rep1++;
                     }
-               else if (n1.length()==3) {
+                else if (n1.length()==3) {
                     rep2++;
                    }
-               else if (n1.length()==4) {
+                else if (n1.length()==4) {
                     rep3++;
                     }
-               else if (n1.length()==5) {
+                else if (n1.length()==5) {
                     rep4++;
                 }
             }
